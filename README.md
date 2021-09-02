@@ -6,6 +6,7 @@ targetは1～4でそれぞれ異なる指標となっており、0-100のスケ�
 
 ## 評価指標
 平均二乗パーセント誤差の平方根（RMSPE：Root Mean Squared Percentage Error）    
+
 ![CodeCogsEqn](https://user-images.githubusercontent.com/58076642/131785016-cb37749d-bf18-48e8-bd00-e06c60df471d.png)
 
 
