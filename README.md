@@ -1,8 +1,7 @@
 # Kaggle Optiver Realized Volatility Prediction
 
 ## コンペの目的
-MLBのplayer idごとに、次の日のファンがデジタルコンテンツへのエンゲージメント(サポーターのtwitterのアクセス、あるサイトのアクセスなど)をどれくらい起こすかというものを数値化したもの(target)を予測するコンペ。  
-targetは1～4でそれぞれ異なる指標となっており、0-100のスケールで数値化されている。
+株のボラティリティ(価格変動の度合い)を時間(time id)ごとに予測するコンペ。
 
 ## 評価指標
 平均二乗パーセント誤差の平方根（RMSPE：Root Mean Squared Percentage Error）    
