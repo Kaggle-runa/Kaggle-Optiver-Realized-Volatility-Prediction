@@ -32,7 +32,7 @@ MLBのオールスターをシーズン中に予測したり、チームの25人
 ほとんどのゲーム状態関連のフィールド（ボール、ストライク、アウトなど）は、当該イベント後のゲーム状態を表します。しかし、ホームスコアとアウェイスコアは、イベントの前のスコアを表します。
 
 
-#### awards.csv colomn infomaiton
+### awards.csv colomn infomaiton
 
 | name | Explanation |
 | --- | --- |
@@ -44,7 +44,7 @@ MLBのオールスターをシーズン中に予測したり、チームの25人
 | playerName | プレイヤーの名前 |
 | awardPlayerTeamId | 受賞した選手が所属するチームID |
 
-#### example_sample_submission.csv colomn infomaiton
+### example_sample_submission.csv colomn infomaiton
 
 | name | Explanation |
 | --- | --- |
