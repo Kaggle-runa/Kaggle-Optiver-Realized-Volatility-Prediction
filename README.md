@@ -1,4 +1,4 @@
-<img width="" alt="無題" src="https://user-images.githubusercontent.com/58076642/131785398-90ff623b-3ea2-492c-a148-87d20cbfa3cd.png">
+<img width="800" alt="無題" src="https://user-images.githubusercontent.com/58076642/131785398-90ff623b-3ea2-492c-a148-87d20cbfa3cd.png">
 
 # Kaggle Optiver Realized Volatility Prediction
 
