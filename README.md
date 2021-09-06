@@ -95,7 +95,7 @@ Bid（売値） は、買い手が株を買う上で希望する価格で、Ask�
 ・bid/ask spread　最高売値と最高買値の比率から求める  
 BidAskSpread=BestOffer/BestBid−1
 
-・Weighted averaged price　WAP(加重平均価格)
+・Weighted averaged price　WAP(加重平均価格)  
 同じ価格帯にビッドとアスクの両方のオファーがある場合、オファーの数が多い方が株式評価額が低くなる。  
 ほとんどの場合、連続した取引時間の間、オーダーブックにはビッドオーダー(買値)がオファー（アスク）オーダー(売値)よりも高いというシナリオは存在しない。  
 
