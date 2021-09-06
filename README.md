@@ -91,7 +91,7 @@ Bid（売値） は、買い手が株を買う上で希望する価格で、Ask�
 | 特徴量作成などの場面でどのような工夫をしたか記載してくれている  | https://www.kaggle.com/junjitakeshima/optiver-beginner-s-gradual-improvement-eng |
 | 公式によるチュートリアル　WAPなどの用語がたくさん  | https://www.kaggle.com/jiashenliu/introduction-to-financial-concepts-and-data |
 
-使える特徴量　公式チュートリアルより
+使える特徴量　公式チュートリアルより  
 ・bid/ask spread　最高売値と最高買値の比率から求める  
 BidAskSpread=BestOffer/BestBid−1
 
