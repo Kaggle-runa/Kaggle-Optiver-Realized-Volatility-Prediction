@@ -25,26 +25,48 @@
 ### Data(deepl)
 このデータセットには、金融市場での実際の取引の実行に関連する株式市場データが含まれています。特に、オーダーブックのスナップショットと約定した取引が含まれています。1秒の分解能で、現代の金融市場のミクロ構造を独特のきめ細かさで見ることができます。
 
-### awards.csv colomn infomaiton
+### book_[train/test].parquet colomn infomaiton
 
 | name | Explanation |
 | --- | --- |
-| awardDate  | 賞を受賞した日 |
-| awardSeason  | 賞を受賞したシーズン |
-| awardId | ID |
-| awardName | 賞の名前 |
-| playerId | プレイヤーに一意に与えられているID |
-| playerName | プレイヤーの名前 |
-| awardPlayerTeamId | 受賞した選手が所属するチームID |
+| stock_id   | 賞を受賞した日 |
+| time_id   | 賞を受賞したシーズン |
+| seconds_in_bucket  | ID |
+| bid_price[1/2] | 賞の名前 |
+| ask_price[1/2] | プレイヤーに一意に与えられているID |
+| bid_size[1/2] | プレイヤーの名前 |
+| ask_size[1/2] | 受賞した選手が所属するチームID |
 
-### example_sample_submission.csv colomn infomaiton
+### trade_[train/test].parquet colomn infomaiton
 
 | name | Explanation |
 | --- | --- |
-| date  | 日付 |
-| date_playerId  | 日付とplayerIDを連結したもの。目的変数を予測するためのkeyになっている |
-| target1 | 目的変数1 |
-| target2 | 目的変数2 |
-| target3 | 目的変数3 |
-| target4 | 目的変数4 |
+| stock_id  | 日付 |
+| time_id  | 日付とplayerIDを連結したもの。目的変数を予測するためのkeyになっている |
+| seconds_in_bucket | 目的変数1 |
+| price | 目的変数2 |
+| size | 目的変数3 |
+| order_count | 目的変数4 |
 
+### train.csv
+
+| name | Explanation |
+| --- | --- |
+| stock_id   | 日付 |
+| time_id  | 日付とplayerIDを連結したもの。目的変数を予測するためのkeyになっている |
+| target  | 目的変数1 |
+
+### test.csv
+
+| name | Explanation |
+| --- | --- |
+| stock_id   | 日付 |
+| time_id  | 日付とplayerIDを連結したもの。目的変数を予測するためのkeyになっている |
+| row_id  | 目的変数1 |
+
+### sample_submission.csv
+
+| name | Explanation |
+| --- | --- |
+| row_id   | 日付 |
+| target  | 日付とplayerIDを連結したもの。目的変数を予測するためのkeyになっている |
