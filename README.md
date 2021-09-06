@@ -7,6 +7,7 @@
 
 ## 評価指標
 平均二乗パーセント誤差の平方根（RMSPE：Root Mean Squared Percentage Error）    
+全データの「正解値-予測値」を正解値で割った値の2乗の平均を計算し、最後に平方根を取ったもの。  
 
 ![CodeCogsEqn](https://user-images.githubusercontent.com/58076642/131785016-cb37749d-bf18-48e8-bd00-e06c60df471d.png)
 
