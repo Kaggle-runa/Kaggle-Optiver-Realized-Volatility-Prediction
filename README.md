@@ -27,46 +27,56 @@
 
 ### book_[train/test].parquet colomn infomaiton
 
+市場に投入された最も競争力のある売買注文に関するオーダーブックデータを提供します。  
+bookの上位2つのレベルが共有されます。bookの第1レベルは価格面でより競争力があり、第2レベルよりも実行が優先されます。  
+
+Bid（売値） は、買い手が株を買う上で希望する価格で、Ask（買値）は、売り手が株を売る上で希望する価格のこと。
+
 | name | Explanation |
 | --- | --- |
-| stock_id   | 賞を受賞した日 |
-| time_id   | 賞を受賞したシーズン |
-| seconds_in_bucket  | ID |
-| bid_price[1/2] | 賞の名前 |
-| ask_price[1/2] | プレイヤーに一意に与えられているID |
-| bid_size[1/2] | プレイヤーの名前 |
-| ask_size[1/2] | 受賞した選手が所属するチームID |
+| stock_id   | 株の銘柄（どの株か） 全ての株式がすべてのタイムバケットに存在するわけではない |
+| time_id   | どの時間の情報かのid (submissionファイルのtime_idと連動している) |
+| seconds_in_bucket  |  time_idの中で、0からスタートして何秒後か。たぶん予測するのは、10分のtotalなので、seconds_in_bucketは、最大600 secのはず |
+| bid_price[1/2] | 株の買値の希望値の１番目と２番目 ※　(Normalized prices of the most/second most competitive buy level. だから、正確には、１番と２番目に正規化されたレベルの買値 |
+| ask_price[1/2] | 株の売値の希望値の１番目と２番目 |
+| bid_size[1/2] | 買うのを希望している側の１番目と２番目の株式数 |
+| ask_size[1/2] | 売るのを希望している側の１番目と２番目の株式数 |  
+
+※　parquetはロード時にカテゴリデータ型に強制することに注意が必要。
 
 ### trade_[train/test].parquet colomn infomaiton
 
+実際に実行された取引に関するデータが含まれている。  
+通常、市場では、実際の取引よりも受動的な売買意図の更新（bookの更新）が多いため、このファイルは注文書よりもまばらであると予想される場合がある。  
+
 | name | Explanation |
 | --- | --- |
-| stock_id  | 日付 |
-| time_id  | 日付とplayerIDを連結したもの。目的変数を予測するためのkeyになっている |
-| seconds_in_bucket | 目的変数1 |
-| price | 目的変数2 |
-| size | 目的変数3 |
-| order_count | 目的変数4 |
+| stock_id  | 同上 |
+| time_id  | 同上 |
+| seconds_in_bucket | 同上。トレードデータとブックデータは同じ時間枠から取得され、トレードデータは一般にまばらであるため、このフィールドは必ずしも0から始まるとは限らないことに注意 |
+| price | 1秒間に発生する実行済みトランザクションの平均価格。価格は正規化されており、平均は各トランザクションで取引された株式数によって重み付けされている |
+| size | 取引された株式の総数 |
+| order_count | 発生している固有の取引注文の数 |
 
 ### train.csv
 
 | name | Explanation |
 | --- | --- |
-| stock_id   | 日付 |
-| time_id  | 日付とplayerIDを連結したもの。目的変数を予測するためのkeyになっている |
-| target  | 目的変数1 |
+| stock_id   | 同上 |
+| time_id  | 同上 |
+| target  | 10分間のtotalボラティリティ |
 
 ### test.csv
 
 | name | Explanation |
 | --- | --- |
-| stock_id   | 日付 |
-| time_id  | 日付とplayerIDを連結したもの。目的変数を予測するためのkeyになっている |
-| row_id  | 目的変数1 |
+| stock_id   | 同上 |
+| time_id  | 同上 |
+| row_id  | stock_idとtime_idを連結したもの |
 
 ### sample_submission.csv
 
 | name | Explanation |
 | --- | --- |
-| row_id   | 日付 |
-| target  | 日付とplayerIDを連結したもの。目的変数を予測するためのkeyになっている |
+| row_id   | 同上 |
+| target  | 同上 |
