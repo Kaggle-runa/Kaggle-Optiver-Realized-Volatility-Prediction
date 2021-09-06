@@ -38,7 +38,7 @@ Bid（売値） は、買い手が株を買う上で希望する価格で、Ask�
 | time_id   | どの時間の情報かのid (submissionファイルのtime_idと連動している) |
 | seconds_in_bucket  |  time_idの中で、0からスタートして何秒後か。たぶん予測するのは、10分のtotalなので、seconds_in_bucketは、最大600 secのはず |
 | bid_price[1/2] | 株の買値の希望値の１番目と２番目 ※　(Normalized prices of the most/second most competitive buy level. だから、正確には、１番と２番目に正規化されたレベルの買値 |
-| ask_price[1/2] | 株の売値の希望値の１番目と２番目 |
+| ask_price[1/2] | 株の売値の希望値の１番目と２番目　Normalized prices of the most/second most competitive buy level.  |
 | bid_size[1/2] | 買うのを希望している側の１番目と２番目の株式数 |
 | ask_size[1/2] | 売るのを希望している側の１番目と２番目の株式数 |  
 
