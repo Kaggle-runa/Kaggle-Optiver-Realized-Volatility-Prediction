@@ -80,3 +80,12 @@ Bid（売値） は、買い手が株を買う上で希望する価格で、Ask�
 | --- | --- |
 | row_id   | 同上 |
 | target  | 同上 |
+
+
+## 2021/09/06
+
+取り敢えず日本語ノートブックを読み込む
+| 内容 | URL |
+| --- | --- |
+| チュートリアル　データの説明などを丁寧にやってくれている | https://www.kaggle.com/chumajin/optiver-realized-eda-for-starter-version |
+| 特徴量作成などの場面でどのような工夫をしたか記載してくれている  | https://www.kaggle.com/junjitakeshima/optiver-beginner-s-gradual-improvement-eng |
