@@ -104,3 +104,9 @@ BidAskSpread=BestOffer/BestBid−1
 ・Realized volatility　ボラティリティの推定のために必要なlog returnの計算にWAPを株価として利用する
 
 ・ボラティリティは自己相関する傾向にあるらしい
+
+
+## 2021/09/06
+テーブルデータのNNにはTabNetが効く？https://www.kaggle.com/c/optiver-realized-volatility-prediction/discussion/266354  
+KholdよるGroupKholdなどのバリデーションの切り方をした方がよい
+特徴量エンジニアリングについて  https://www.slideshare.net/mlm_kansai/kaggle-138546659
