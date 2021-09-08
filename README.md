@@ -108,5 +108,5 @@ BidAskSpread=BestOffer/BestBid−1
 
 ## 2021/09/06
 テーブルデータのNNにはTabNetが効く？https://www.kaggle.com/c/optiver-realized-volatility-prediction/discussion/266354  
-KholdよるGroupKholdなどのバリデーションの切り方をした方がよい
+KholdよるGroupKholdなどのバリデーションの切り方をした方がよい  
 特徴量エンジニアリングについて  https://www.slideshare.net/mlm_kansai/kaggle-138546659
