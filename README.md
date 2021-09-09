@@ -112,9 +112,10 @@ KholdよりGroupKholdなどのバリデーションの切り方をした方が�
 特徴量エンジニアリングについて  https://www.slideshare.net/mlm_kansai/kaggle-138546659
 
 ### 2021/09/08
-GroupKholdで試してみたところCV、LBスコアが多少悪化　https://www.kaggle.com/ano12pmo/2xlgbm-fnn-ensemble-groupkhold?scriptVersionId=74258324  
+GroupKholdで試してみたところCV、LBスコアが多少悪化  　
+https://www.kaggle.com/ano12pmo/2xlgbm-fnn-ensemble-groupkhold?scriptVersionId=74258324    
 パラメータをチューニングするなど検討したい
 
 ### 2021/09/09
-LGBMのハイパラの仕方のノートブックが共有　https://www.kaggle.com/shivansh002/optuna-parameter-optimization-lightgbm
+LGBMのハイパラの仕方のノートブックが共有　https://www.kaggle.com/shivansh002/optuna-parameter-optimization-lightgbm  
 optunaの勉強もまたしておきたい
