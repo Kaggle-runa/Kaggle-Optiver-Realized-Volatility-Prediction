@@ -106,7 +106,15 @@ BidAskSpread=BestOffer/BestBid−1
 ・ボラティリティは自己相関する傾向にあるらしい
 
 
-## 2021/09/06
+## 2021/09/07
 テーブルデータのNNにはTabNetが効く？https://www.kaggle.com/c/optiver-realized-volatility-prediction/discussion/266354  
-KholdよるGroupKholdなどのバリデーションの切り方をした方がよい  
+KholdよりGroupKholdなどのバリデーションの切り方をした方がよい  
 特徴量エンジニアリングについて  https://www.slideshare.net/mlm_kansai/kaggle-138546659
+
+### 2021/09/08
+GroupKholdで試してみたところCV、LBスコアが多少悪化　https://www.kaggle.com/ano12pmo/2xlgbm-fnn-ensemble-groupkhold?scriptVersionId=74258324  
+パラメータをチューニングするなど検討したい
+
+### 2021/09/09
+LGBMのハイパラの仕方のノートブックが共有　https://www.kaggle.com/shivansh002/optuna-parameter-optimization-lightgbm
+optunaの勉強もまたしておきたい
