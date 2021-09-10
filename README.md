@@ -119,3 +119,7 @@ https://www.kaggle.com/ano12pmo/2xlgbm-fnn-ensemble-groupkhold?scriptVersionId=7
 ### 2021/09/09
 LGBMのハイパラの仕方のノートブックが共有　https://www.kaggle.com/shivansh002/optuna-parameter-optimization-lightgbm  
 optunaの勉強もまたしておきたい
+
+### 2021/09/10
+SIGNATEのファンダメンタル分析のチュートリアル資料を改めて読む  
+https://japanexchangegroup.github.io/J-Quants-Tutorial/
