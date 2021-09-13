@@ -140,3 +140,7 @@ https://japanexchangegroup.github.io/J-Quants-Tutorial/
 金融データでは特徴量をあまり増やしすぎない方がよい(オッカムの剃刀)  
 説明変数を増やしすぎると未来のデータで同じ現象がはっせいする確率が減少するため。→モデルの複雑さとデータの適合度のバランスが大事  
 特に今回のコンペではPBが３件しかないためそこに過剰適合したモデルを構築しないように注意(適切なCVの設計)
+
+### 2021/09/13
+TabNetのとても参考になるノートブックを利用(モデルの作成からFeatureImporttanceの評価まで丁寧にやってくれている)  
+https://www.kaggle.com/datafan07/optiver-volatility-predictions-using-tabnet
