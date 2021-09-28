@@ -144,3 +144,12 @@ https://japanexchangegroup.github.io/J-Quants-Tutorial/
 ### 2021/09/13
 TabNetのとても参考になるノートブックを利用(モデルの作成からFeatureImporttanceの評価まで丁寧にやってくれている)  
 https://www.kaggle.com/datafan07/optiver-volatility-predictions-using-tabnet
+
+### コンペ終了  
+・やったこと  
+foldの切り方の工夫 Group kfold StratifiedGroupKFold  
+https://www.kaggle.com/nrcjea001/lgbm-baseline-no-leaks-stratifiedgroupkfold
+
+optunaでチューニング
+
+
