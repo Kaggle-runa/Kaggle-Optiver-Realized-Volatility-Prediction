@@ -152,6 +152,5 @@ https://www.kaggle.com/nrcjea001/lgbm-baseline-no-leaks-stratifiedgroupkfold
 
 optunaでチューニング
 
-## 
-銅メダル獲得！！
+## 銅メダル獲得！！
 
